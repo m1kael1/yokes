@@ -1,13 +1,27 @@
 import { Facebook, Instagram, LinkedIn, Skype, Twitter } from "@/asset/icons";
 import { Separator } from "../ui/separator";
 
-const SocialLinksIcon: JSX.Element[] = [
-	<LinkedIn />,
-	<Twitter />,
-	<Facebook />,
-	<Twitter />,
-	<Skype />,
-	<Instagram />,
+const SocialLinksIcon = [
+	{
+		name: "linkedin",
+		icon: <LinkedIn />,
+	},
+	{
+		name: "twitter",
+		icon: <Twitter />,
+	},
+	{
+		name: "facebook",
+		icon: <Facebook />,
+	},
+	{
+		name: "skype",
+		icon: <Skype />,
+	},
+	{
+		name: "instagram",
+		icon: <Instagram />,
+	},
 ] as const;
 
 export default function Footer() {
@@ -30,9 +44,9 @@ export default function Footer() {
 					<div>
 						<p className="mb-5">Social Links</p>
 						<ul className="grid grid-cols-3 gap-y-5 w-fit lg:grid-cols-6 ">
-							{SocialLinksIcon?.map((icon, index) => (
-								<li key={index} className="pr-6">
-									{icon}
+							{SocialLinksIcon?.map((SocialLinksIcon) => (
+								<li key={SocialLinksIcon.name} className="pr-6">
+									{SocialLinksIcon.icon}
 								</li>
 							))}
 						</ul>
