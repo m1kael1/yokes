@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Button } from "../ui/button";
 
 export default function Herok() {
@@ -22,8 +23,9 @@ export default function Herok() {
 						View collection
 					</Button>
 				</div>
-				<div className="min-h-[520px] w-full hidden md:block">
-					<img
+				<div className="min-h-[520px] w-full hidden md:block relative">
+					<Image
+						fill
 						className="object-center h-full w-full object-cover"
 						src="/images/Right-Image.png"
 						alt="Right image"

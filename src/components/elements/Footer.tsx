@@ -30,8 +30,10 @@ export default function Footer() {
 					<div>
 						<p className="mb-5">Social Links</p>
 						<div className="grid grid-cols-3 gap-y-5 w-fit lg:grid-cols-6 ">
-							{SocialLinksIcon.map((icon) => (
-								<span className="pr-6">{icon}</span>
+							{SocialLinksIcon.map((icon, index) => (
+								<span key={index} className="pr-6">
+									{icon}
+								</span>
 							))}
 						</div>
 					</div>

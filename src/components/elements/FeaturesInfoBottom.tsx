@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Button } from "../ui/button";
 
 export const FeaturesInfoBottom = () => {
@@ -21,8 +22,9 @@ export const FeaturesInfoBottom = () => {
 				<Button className="lg:w-fit">Get in Touch</Button>
 			</div>
 
-			<div className="w-full h-[358px] bg-primary lg:h-[603px]">
-				<img
+			<div className="w-full h-[358px] bg-primary lg:h-[603px] relative">
+				<Image
+					fill
 					src="/images/Features-Bottom.png"
 					className="w-full h-full object-cover object-center"
 					alt=""
