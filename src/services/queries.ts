@@ -1,4 +1,4 @@
-import type { ProductType, Product, Designer, Category } from "@prisma/client";
+import type { Product, Designer, ProductType, Category } from "@prisma/client";
 import useSWR from "swr";
 
 export function useProducts() {
