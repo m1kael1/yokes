@@ -6,12 +6,10 @@ import ListingNew from "@/components/elements/ListingNew";
 import ListingPopular from "@/components/elements/ListingPopular";
 import { EmailSignUp } from "@/components/elements/EmailSignUp";
 import { FeaturesInfoBottom } from "@/components/elements/FeaturesInfoBottom";
-import Category from "@/components/elements/Category";
 
 export default function Home() {
 	return (
 		<main>
-			<Category />
 			<Hero />
 			<FeaturesInfo />
 			<ListingNew />
